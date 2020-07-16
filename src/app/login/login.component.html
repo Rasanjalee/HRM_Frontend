@@ -1,0 +1,28 @@
+<div class="container">
+
+  <form>
+    <table style="border: 1px solid;">
+      <tr>
+        <td colspan="2" style="text-align: center;margin: 10px;font-size: 24px ;padding: 20px ">OrangeHRM</td>
+      </tr>
+      <tr>
+        <td><label><b>Login name</b></label></td>
+        <td>
+          <input type="text" placeholder="Enter Username" name="uname" [(ngModel)]="USER_NAME" required>
+        </td>
+      </tr>
+      <tr>
+        <td><label><b>Password</b></label>
+        </td>
+        <td><input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="PASS_WORD" required>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;margin: 10px;padding-bottom: 10px">
+          <button type="submit" (click)="login()">Login</button>
+        </td>
+      </tr>
+    </table>
+
+  </form>
+</div>
